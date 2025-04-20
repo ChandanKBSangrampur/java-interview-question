@@ -1,1 +1,44 @@
+ --------------------------------------------------------- Java Interview Question-------------------------------------------------------------------------------------
+Q1-How To make a Singleton class in java?
+Answer-Singleton class are those classes we can have one and only have one instance of class for this we need to follow three step to create the singleton class 
+Step-1-Make a constructor is private in nature so no can invoke directly from the outside of the class
+Step-2-Create a public static method of instance of this class
+Step-3- Make private and static variable (check the variable is null or not if varible is null then create a new instance and assign the variable and return the variable 
+  public class SingletonDemo {
+    private static SingletonDemo instance;
+    private SingletonDemo()
+       { 
+      }
+public static SingletonDemo getInstance(){
+        if(instance==null){
+            instance=new SingletonDemo();
+        }
+         return instance;
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q-2 What is difference between throw and throws keword
+Answer- There are many differences they are below 
+1)Throw is basically throw the usrerdefined or custom excception where throws just pass the exception from calling method
+2)Throw is used inside of method body with new keyword where thorws are used with method signature 
+3)Thorw is basicaly throw the one exception at a time, where the thorws can pass many exceptions at a time 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q-3 Mutable vs Immutable objects in java
+Mutable objects are those  where u are able to change the value of object after have been created and otherhand the object value can not be 
+changed or modified once they are craeted  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
